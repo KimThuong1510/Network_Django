@@ -1,0 +1,13 @@
+
+{% load static %}
+
+{% block content %}
+<div class="create-post-page">
+  <h2>Tạo bài viết mới</h2>
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="send-btn">Đăng bài</button>
+  </form>
+</div>
+{% endblock %}

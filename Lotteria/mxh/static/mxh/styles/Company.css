@@ -1,0 +1,70 @@
+
+    /* Tabs */
+    .tab-container {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .tab {
+      padding: 6px 20px;
+      border-radius: 20px;
+      border: 1px solid #ccc;
+      background-color: white;
+      font-weight: 600;
+      cursor: pointer;
+      position: relative;
+    }
+
+    .tab.active {
+      background-color: #e1494a;
+      color: white;
+      border: none;
+    }
+
+    .tab .badge {
+      position: absolute;
+      top: -6px;
+      right: -6px;
+      background-color: #007144;
+      color: white;
+      border-radius: 50%;
+      width: 18px;
+      height: 18px;
+      font-size: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+    }
+
+    /* Notifications list */
+    .notice-list {
+      background-color: white;
+      border: 1px solid #ccc;
+    }
+
+    .notice-item {
+      padding: 14px 20px;
+      border-bottom: 1px dashed #ccc;
+    }
+
+    .notice-item:last-child {
+      border-bottom: none;
+    }
+
+    .notice-item.highlight {
+      background-color: #d5e3e8;
+    }
+
+    .notice-title {
+      font-weight: bold;
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+
+    .notice-date {
+      font-size: 14px;
+      color: #5a5a5a;
+    }

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Thông báo Công ty</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="{% static 'qlda/styles/Home.css' %}">
+   <link rel="stylesheet" href="{% static 'qlda/styles/Company.css' %}">
+</head>
+
+<body>
+    {% include 'qlda/includes/Header.html' %}
+    <div class="main">
+        {% include 'qlda/includes/Sidebar.html' %}
+        <div class="content">
+            <div class="tab-container">
+                <div class="tab">Cá nhân</div>
+                <div class="tab active">
+                    Công ty
+                    <div class="badge">1</div>
+                </div>
+            </div>
+
+            <div class="notice-list">
+                <div class="notice-item highlight">
+                    <div class="notice-title">Cập nhật quy định về đồng phục mới từ tháng sau.</div>
+                    <div class="notice-date">28/03/2025</div>
+                </div>
+                <div class="notice-item">
+                    <div class="notice-title">Danh sách nhân viên xuất sắc tháng 3.</div>
+                    <div class="notice-date">26/03/2025</div>
+                </div>
+                <div class="notice-item">
+                    <div class="notice-title">Khóa đào tạo nhân viên mới – Chào đón các bạn gia nhập Lotteria!</div>
+                    <div class="notice-date">24/03/2025</div>
+                </div>
+                <div class="notice-item">
+                    <div class="notice-title">Teambuilding Lotteria – Gắn kết và phát triển!</div>
+                    <div class="notice-date">28/02/2025</div>
+                </div>
+                <div class="notice-item">
+                    <div class="notice-title">Bảo mật thông tin công ty – Vấn đề cần chú ý</div>
+                    <div class="notice-date">20/02/2025</div>
+                </div>
+                <div class="notice-item">
+                    <div class="notice-title">Cập nhật các chính sách phúc lợi mới</div>
+                    <div class="notice-date">20/02/2025</div>
+                </div>
+            </div>
+
+        </div>
+
+</body>
+
+</html>
