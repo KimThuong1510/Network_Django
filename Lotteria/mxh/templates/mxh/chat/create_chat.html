@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <form method="post">
+    {% csrf_token %}
+    <input type="text" name="group_name" placeholder="Tên nhóm" required><br>
+
+    {% for user in users %}
+      <label>
+        <input type="checkbox" name="members" value="{{ user.id }}">
+        {{ user.username }}
+      </label><br>
+    {% endfor %}
+
+    <button type="submit">Tạo nhóm</button>
+  </form>
+
+</body>
+</html>
